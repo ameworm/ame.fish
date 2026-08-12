@@ -1,0 +1,21 @@
+---
+const { date, id, url } = Astro.props;
+---
+<div class="postitem"> 
+	<a href={ url }>{id} - { date }</a>
+</div>
+
+<style>
+	.postitem {
+		font-family: "Baby Doll";
+		
+		border: double #f78bcd;
+		background: linear-gradient(#ffffff99, #ffffff70);
+
+		padding: 2px;
+
+		text-align: center;
+		color: #f78bcd;
+		text-shadow: 1px 1px white;
+	}
+</style>

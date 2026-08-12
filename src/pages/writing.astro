@@ -3,6 +3,7 @@ import '../css/default.css';
 
 import Layout from '../layouts/layout.astro';
 import Box from '../components/box.astro';
+import PostBox from '../components/post.astro';
 
 import { getCollection } from 'astro:content';
 const posts = await getCollection('posts');
@@ -10,12 +11,8 @@ const posts = await getCollection('posts');
 
 <Layout>
 	<Box>
-		<ul>
-			{posts.map((post) => (
-				<li>
-					<a href={`/posts/${post.id}`}>hallo</a>
-				</li>
-			))}
-		</ul>
+		{posts.map((post) => (
+		<PostBox id = {post.id} url = {`/posts/${post.id}`} date = {post.data.date}></PostBox>
+		))}
 	</Box>
 </Layout>

@@ -1,4 +1,4 @@
 ---
-pubDate: 1022-08-12
+date: June 20th, 1022
 ---
 "I am born again."
