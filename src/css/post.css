@@ -1,0 +1,54 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+@font-face {
+  font-family: "Kinkee";
+  src: url(kinkee.TTF);
+}
+
+@font-face {
+  font-family: "Baby Doll";
+  src: url(babydoll.ttf);
+}
+
+@font-face {
+  font-family: "Vanilla Caramel";
+  src: url(vanillacaramel.otf);
+}
+
+.post-box {
+    background: linear-gradient(#ffd4e6, #fbddff);
+    color:#f78bcd;
+    text-shadow: 1px 1px white;
+    position: static;
+    border: double #f78bcd;
+    font-family: "Vanilla Caramel";
+    
+    padding: 15px 20px 15px 20px;
+    margin: 3px;
+    margin-bottom: 15px;
+    
+    width: 700px;
+}
+
+.post-date {
+  text-align: left;
+  font-size: 12px;
+  background: white;
+  color: #7A707B;
+  width: 100%;
+  padding: 2px;
+  padding-left: 5px;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-bottom: 5px;
+  
+  border: double #f78bcd;
+}
+
+.post-frame {
+  border: outset #996C47;
+  background: white;
+  max-width: 60%;
+}

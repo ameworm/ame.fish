@@ -3,6 +3,9 @@ import '../css/default.css';
 
 import Layout from '../layouts/layout.astro';
 import Box from '../components/box.astro';
+
+import { getCollection } from 'astro:content';
+const posts = await getCollection('posts');
 ---
 
 <Layout>
