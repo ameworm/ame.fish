@@ -1,0 +1,36 @@
+---
+interface Props {
+	width?: string;
+	maxwidth: string;
+}
+
+const {
+	width = "auto",
+	maxwidth = "auto"
+} = Astro.props;
+---
+
+<div
+	class="box"
+	style={`--box-width: ${width}; --box-maxwidth: ${maxwidth}`}
+>
+	<slot />
+</div>
+
+<style>
+	.box {
+		background: linear-gradient(#ffd4e6, #fbddff);
+		color:#f78bcd;
+	   text-shadow: 1px 1px white;
+	   position: static;
+	   border: double #f78bcd;
+	   font-family: "Vanilla Caramel";
+    
+		padding: 15px 20px 15px 20px;
+		margin-left: 3px;
+		margin-right: 3px;
+
+		width: var(--box-width);
+		max-width: var(--box-maxwidth);
+	}
+</style>

@@ -1,0 +1,23 @@
+---
+import SideMenu from '../components/sidemenu.astro'
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>pagetitle</title>
+	</head>
+
+	<body>
+		<div id="site-container">
+			<div id="banner"><img style="width: 70%" src="/i/babylive.png"><ruby>AMEWORM<rt>amelian info center</rt></ruby></div>
+			<br>
+			<div id="horizontals">
+				<SideMenu />
+				<slot />
+			</div>
+		</div>
+	</body>
+</html>

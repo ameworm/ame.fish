@@ -1,0 +1,10 @@
+.textbox {
+    background: linear-gradient(#1e0eff, #15123f);
+    padding: 10px;
+    border: groove #fff;
+    color:#fff;
+    text-shadow: 0px 0px #ffffff00;
+    text-align: left;
+    word-break:break-word;
+    overflow: auto;
+}

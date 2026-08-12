@@ -1,0 +1,79 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+@font-face {
+  font-family: "Kinkee";
+  src: url(kinkee.TTF);
+}
+
+@font-face {
+  font-family: "Baby Doll";
+  src: url(babydoll.ttf);
+}
+
+@font-face {
+  font-family: "Vanilla Caramel";
+  src: url(vanillacaramel.otf);
+}
+
+body {
+  background-image:url("/i/startiles.png");
+  color: black;
+  font-family: Verdana;
+}
+
+#site-container {
+  background:#ffffff;
+  
+  position: absolute;
+  margin: auto;
+  
+  border: double #f78bcd;
+  border-radius: 0px 30px 0px 0px;
+  
+  padding: 10px;
+  
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1100px;
+}
+
+#horizontals {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+#banner {
+  background: linear-gradient(#ffd4e6, #fbddff);
+  color:#f78bcd;
+  position: static;
+  border: double #f78bcd;
+  border-radius: 0px 30px 0px 0px;
+  
+  max-height: 400px;
+  
+  font-size: 60px;
+  font-family: "Kinkee";
+  text-shadow: 5px 5px white;
+  
+  display: flex;
+  align-items: center;
+  
+  overflow: hidden;
+}
+
+.box {
+    background: linear-gradient(#ffd4e6, #fbddff);
+    color:#f78bcd;
+    text-shadow: 1px 1px white;
+    position: static;
+    border: double #f78bcd;
+    font-family: "Vanilla Caramel";
+    
+    padding: 15px 20px 15px 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
