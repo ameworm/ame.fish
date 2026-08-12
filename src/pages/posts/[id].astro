@@ -1,4 +1,9 @@
 ---
+import '../../css/default.css';
+
+import Layout from '../../layouts/layout.astro';
+import Box from '../../components/box.astro';
+
 import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -13,5 +18,8 @@ const { post } = Astro.props
 const { Content } = await render(post);
 ---
 
-<h1>{post.data.title}</h1>
-<Content />
+<Layout>
+	<Box width="80%">
+		<Content />
+	</Box>
+</Layout>
