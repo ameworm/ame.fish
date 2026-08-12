@@ -1,5 +1,4 @@
 ---
-// src/pages/blog/[id].astro
 import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -15,4 +14,4 @@ const { Content } = await render(post);
 ---
 
 <h1>{post.data.title}</h1>
-< Content />
+<Content />

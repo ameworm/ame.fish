@@ -9,4 +9,13 @@ const posts = await getCollection('posts');
 ---
 
 <Layout>
+	<Box>
+		<ul>
+			{posts.map((post) => (
+				<li>
+					<a href={`/posts/${post.id}`}>hallo</a>
+				</li>
+			))}
+		</ul>
+	</Box>
 </Layout>
