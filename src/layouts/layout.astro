@@ -1,5 +1,6 @@
 ---
-import SideMenu from '../components/sidemenu.astro'
+import SideMenu from '../components/sidemenu.astro';
+import Ticker from '../components/ticker.astro';
 ---
 
 <!doctype html>
@@ -9,11 +10,10 @@ import SideMenu from '../components/sidemenu.astro'
 		<meta name="viewport" content="width=device-width" />
 		<title>pagetitle</title>
 	</head>
-
 	<body>
 		<div id="site-container">
 			<div id="banner"><img style="width: 70%" src="/i/babylive.png"><ruby>AMEWORM<rt>amelian info center</rt></ruby></div>
-			<br>
+			<Ticker />
 			<div id="horizontals">
 				<SideMenu />
 				<slot />
