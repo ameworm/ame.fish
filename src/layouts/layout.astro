@@ -1,6 +1,8 @@
 ---
 import SideMenu from '../components/sidemenu.astro';
 import Ticker from '../components/ticker.astro';
+
+const { pageTitle = "ameworm" } = Astro.props;
 ---
 
 <!doctype html>
@@ -8,7 +10,7 @@ import Ticker from '../components/ticker.astro';
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<title>pagetitle</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
 		<div id="site-container">
