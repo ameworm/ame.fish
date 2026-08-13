@@ -4,17 +4,17 @@
 
 @font-face {
   font-family: "Kinkee";
-  src: url(kinkee.TTF);
+  src: url("/kinkee.TTF");
 }
 
 @font-face {
   font-family: "Baby Doll";
-  src: url(babydoll.ttf);
+  src: url("/babydoll.ttf");
 }
 
 @font-face {
   font-family: "Vanilla Caramel";
-  src: url(vanillacaramel.otf);
+  src: url("/vanillacaramel.otf");
 }
 
 body {

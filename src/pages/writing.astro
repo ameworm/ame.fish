@@ -10,9 +10,14 @@ const posts = await getCollection('posts');
 ---
 
 <Layout>
-	<Box>
+	<Box width=25%>
 		{posts.map((post) => (
 		<PostBox id = {post.id} url = {`/posts/${post.id}`} date = {post.data.date}></PostBox>
 		))}
+	</Box>
+	<Box width=60%>
+		<br>
+		<div style="margin-left:auto; margin-right:auto; display:block; text-align:center;"><br><img src="/i/bookplush.png" style="width:30%;"></div>
+		a wealth of knowledge is stored here. ame has a lot to say for those who want to hear!! though its not guaranteed any of it has any meaning. these writings arent made with meaning in mind, only heart. if you, too, put Heart first in your life, maybe we can get along well!
 	</Box>
 </Layout>

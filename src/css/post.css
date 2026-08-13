@@ -4,20 +4,20 @@
 
 @font-face {
   font-family: "Kinkee";
-  src: url(kinkee.TTF);
+  src: url(/kinkee.TTF);
 }
 
 @font-face {
   font-family: "Baby Doll";
-  src: url(babydoll.ttf);
+  src: url(/babydoll.ttf);
 }
 
 @font-face {
   font-family: "Vanilla Caramel";
-  src: url(vanillacaramel.otf);
+  src: url(/vanillacaramel.otf);
 }
 
-.post-box {
+.post {
     background: linear-gradient(#ffd4e6, #fbddff);
     color:#f78bcd;
     text-shadow: 1px 1px white;
@@ -47,8 +47,13 @@
   border: double #f78bcd;
 }
 
-.post-frame {
+.post img {
   border: outset #996C47;
   background: white;
   max-width: 60%;
+  text-align: center;
+
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
 }
