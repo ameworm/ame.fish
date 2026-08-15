@@ -1,0 +1,38 @@
+---
+const { name, desc, url, cover } = Astro.props;
+---
+
+<div id="vn-verti">
+	<div id="vn-hori" style="display: flex; align-items: stretch; justify-contents: space-between;">
+		<div id="jewelside" 
+			  style="background: #fff; height: 300px; width: 10px; border: solid 2px #e6e6e6;" />
+
+			<div id="jewelmain">
+				<img src={cover}/>
+		</div>
+	</div>
+
+	<div class="vn-field"> - {name} - </div>
+	<div class="vn-field" style="text-align:left;"> {desc} </div>
+	<div class="vn-field"> - <a href={url}>play here</a> - </div>
+</div>
+
+<style>
+	#jewelmain {
+		border: solid 2px #363636;
+		height: 300px;
+	}
+
+	#jewelmain img {
+		height: 300px;
+		width: auto;
+	}
+
+	.vn-field {
+		border: double #f78bcd;
+		text-align: center;
+		background: #fff;
+		max-width: 386px;
+		padding: 2px;
+	}
+</style>
