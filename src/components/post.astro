@@ -1,8 +1,9 @@
 ---
-const { date, id, url } = Astro.props;
+const { date, id, url, preview } = Astro.props;
 ---
 <div class="postitem"> 
 	<a href={ url }>{id} - { date }</a>
+	{preview && <p class="preview">{preview}</p>}
 </div>
 
 <style>
@@ -17,5 +18,10 @@ const { date, id, url } = Astro.props;
 		text-align: center;
 		color: #f78bcd;
 		text-shadow: 1px 1px white;
+	}
+
+	.preview {
+		margin: 0px;
+		font-size: 12px;		
 	}
 </style>

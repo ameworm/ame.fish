@@ -7,15 +7,28 @@ import PostBox from '../components/post.astro';
 
 import { getCollection } from 'astro:content';
 const posts = await getCollection('posts');
+
+const preview = (body = "", length = 80) => {
+	const text = body
+		.replace(/!\[.*?\]\(.*?\)/g, "")
+		.replace(/\[(.*?)\]\(.*?\)/g, "$1")
+		.replace(/<[^>]+>/g, "")
+		.replace(/[*_#>~`]/g, "")
+		.replace(/\s+/g, " ")
+		.trim();
+	return text.length > length ? text.slice(0, length).trimEnd() + "..." : text;
+};
 ---
 
 <Layout>
-	<Box width=25%>
+	<Box width=40%>
 		{posts.map((post) => (
-		<PostBox id = {post.id} url = {`/posts/${post.id}`} date = {post.data.date}></PostBox>
+		<PostBox
+			id = {post.id} url = {`/posts/${post.id}`} date = {post.data.date} preview={preview(post.body)}>
+		</PostBox>
 		))}
 	</Box>
-	<Box width=60%>
+	<Box width=40%>
 		<br>
 		<div style="margin-left:auto; margin-right:auto; display:block; text-align:center;"><br><img src="/i/bookplush.png" style="width:30%;"></div>
 		a wealth of knowledge is stored here. ame has a lot to say for those who want to hear!! though its not guaranteed any of it has any meaning. these writings arent made with meaning in mind, only heart. if you, too, put Heart first in your life, maybe we can get along well!
