@@ -6,7 +6,7 @@ import Box from '../components/box.astro';
 import PostBox from '../components/post.astro';
 
 import { getCollection } from 'astro:content';
-const posts = await getCollection('posts');
+const posts = (await getCollection('posts')).sort((a, b) => b.id.localeCompare(a.id));
 
 const preview = (body = "", length = 80) => {
 	const text = body
