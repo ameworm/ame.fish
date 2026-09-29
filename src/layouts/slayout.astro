@@ -1,0 +1,22 @@
+---
+const { pageTitle = "ameworm" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<div class="box" style="text-align: center;">
+			AME'S SECOND LIFE SHRINE
+		</div>
+        <slot />
+		<div id="menucontainer">
+			<div class="button"><a href=/sl/home/>BACK TO SHRINE HOME</a></div>
+			<div class="button"><a href=/>BACK TO WEBSITE</a></div>
+		</div>
+	</body>
+</html>

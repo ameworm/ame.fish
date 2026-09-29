@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Kinkee";
+  src: url("/kinkee.TTF");
+}
+
+@font-face {
+  font-family: "Baby Doll";
+  src: url("/babydoll.ttf");
+}
+
+@font-face {
+  font-family: "Vanilla Caramel";
+  src: url("/vanillacaramel.otf");
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.box {
+    background-color: rgb(255, 212, 233);
+    color: rgb(52, 52, 52);
+    outline: 1px solid rgb(79, 67, 75);
+    box-shadow: inset 0px -6px 0px 0px rgb(215, 167, 191);
+    position: static;
+    margin: 5px;
+    padding: 10px;
+}
+
+.box img {
+  max-width: 700px;
+  border: 12px solid white;
+  border-bottom-width: 32px;
+}
+
+#menucontainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.button {
+    background-color: rgb(255, 212, 233);
+    outline: 1px solid rgb(79, 67, 75);
+    box-shadow: inset 0px -6px 0px 0px rgb(215, 167, 191);
+
+    
+    text-align: center;
+    padding: 6px;
+    margin: 5px;
+    width:fit-content;
+}
+
+a:link {
+  color: rgb(52, 52, 52);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(52, 52, 52);
+  text-decoration: none;
+}
